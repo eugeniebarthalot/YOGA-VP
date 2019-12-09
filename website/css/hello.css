@@ -1,0 +1,83 @@
+/* This is a comment in CSS */
+
+/* How to import and name a font */
+@font-face {
+	font-family: "FuturaBoldfont";
+	src: url("../font/FuturaBoldfont.ttf");
+	font-style: normal;
+	font-weight: 400;
+}
+
+
+/* class selector */
+.title {
+	color: red;
+	margin-left: 100px;
+	background-color: black;
+	width: 200px;
+	border-style: solid;
+	text-align: center;
+}
+
+/* Id selector */
+/* we change the font-family */
+#special {
+	font-family: "FuturaBoldfont";
+}
+
+/* Tag selector */
+h2 {
+	background-color: blue;
+	color:white;
+}
+
+img {
+	max-width:100%;
+	max-height: 200px;
+}
+
+/* Cascade selector */
+.one {
+	width: 100%;
+	min-height:300px;
+	display:flex;
+	justify-content:flex-start;
+	align-items: center;
+	background-color:lightgrey;
+	margin-top: 20px;
+}
+.one > .two{
+	width: 250px;
+	height: 250px;
+	margin: 20px;
+	font-size:30px;
+	font-weight:bold;
+	background-color:yellow;
+	text-align:center;
+	line-height:250px;
+}
+
+.one > .two > div {
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+	font-size:20px;
+	font-weight:bold;
+	background-color:red;
+	text-align:center;
+	line-height: 20px;
+}
+
+.animation {
+	background-color:green;
+	position:relative;
+}
+
+.animated {
+	position:absolute;
+}
+
+.animated:hover {
+	cursor:pointer;
+}
+
